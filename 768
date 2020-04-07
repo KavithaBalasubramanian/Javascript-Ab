@@ -1,0 +1,35 @@
+//Let "A" be a year, write a program to check whether this year is a leap year or not.
+
+
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(year(userInput));
+});
+
+function year(Data){
+  var a = Data;
+ for(var i=0;i<year.length;i++)
+  {
+   a[i]=parseInt(a[i]);
+    if(a%4==0){
+      console.log("Y")
+      
+    }
+    else
+    {
+      console.log("N")
+      
+    }
+   exit;
+  }
+}
+    
