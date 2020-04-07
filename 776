@@ -1,0 +1,26 @@
+//You are provided with the radius of a circle "A". Find the length of its circumference.
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(circum(userInput));
+});
+
+function circum(Data){
+  var a = Data;
+  var c = 0;
+  for(var i=0;i<circum.length;i++)
+  {
+    
+    c=2*3.14159*a[i];
+    var n = c.toFixed(2);
+    
+}
+return n;
+}
