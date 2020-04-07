@@ -1,0 +1,26 @@
+//You are provided with a number, "N". Find its factorial.
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(fact(userInput));
+});
+
+function fact(Data){
+  var a = Data;
+  var c = 1;
+ for(var i=0;i<fact.length;i++)
+  {
+   a[i]=parseInt(a[i]);
+    for(var j=1;j<=a;j++)
+      c=c*j;
+  }
+  return c;
+}
