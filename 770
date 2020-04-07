@@ -1,0 +1,30 @@
+//You are provided with a number check whether its odd or even. 
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(even(userInput));
+});
+
+function even(Data){
+  var a = Data;
+  var c = 0;
+ for(var i=0;i<even.length;i++)
+  {
+   a[i]=parseInt(a[i]);
+    if(a%2==0)
+      console.log("Even")
+    else
+      console.log("Odd")
+  }
+  exit;
+}
+    
+    
+    
