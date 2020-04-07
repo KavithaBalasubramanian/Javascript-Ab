@@ -1,0 +1,27 @@
+//The area of an equilateral triangle is ¼(√3a2) where "a" represents a side of the triangle. You are provided with the side "a". Find the area of the equilateral triangle.
+
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(triangle(userInput));
+});
+
+function triangle(Data){
+  var a = Data;
+  var c = 0;
+  for(var i=0;i<triangle.length;i++)
+  {
+    a[i]=parseInt(a[i]);
+    c=0.25*(Math.sqrt(3)*a*a);
+    var n =c.toFixed(2);
+  }
+  return n;
+}
