@@ -1,0 +1,30 @@
+//Using the method of looping, write a program to print the table of 9 till N in the format as follows:
+(N is input by the user)
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+inp.on("line", (data) => {
+	console.log(year(data))
+});
+
+function year(Data){
+  var a = Data.split(" ");
+  var c=0;
+ for(var i=0;i<year.length;i++)
+  {
+   a[i]=parseInt(a[i]);
+    for(j=1;j<=a;j++){
+      c=j*9;
+      console.log(c.split(" "));
+      
+    }
+    exit;
+  }
+  
+}
+   
