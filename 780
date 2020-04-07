@@ -1,0 +1,18 @@
+//You are given with Principle amount($), Interest Rate(%) and Time (years) in that order. Find Simple Interest.
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput=[];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var p =parseInt(inputData[0]);
+    var r =parseFloat(inputData[1]);
+    var t =parseInt(inputData[2]);
+    var si = ((p*t*r)/100);
+	console.log(si.toFixed(2));
+});
