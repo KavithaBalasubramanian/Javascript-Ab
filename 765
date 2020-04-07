@@ -1,0 +1,32 @@
+//You are given a number A in Kilometers. Convert this into B: Meters and C: Centi-Metres.
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(meter(userInput));
+});
+
+function meter(Data){
+  var a = Data;
+  var c = 0;
+  var d = 0;
+  for(var i=0;i<meter.length;i++)
+  {
+    a[i]=parseInt(a[i]);
+    c=1000*a;
+    d=100000*a;
+    console.log(c)
+   console.log(d)
+  }
+  exit;
+  
+}
+    
+    
