@@ -1,0 +1,26 @@
+//You are given A = Length of a rectangle & B = breadth of a rectangle. Find its area “C”.
+
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+inp.on("close", () => {
+	console.log(area(userInput));
+});
+
+function area(Data){
+  var a = Data;
+  var c = 0;
+  for(var i=0;i<area.length;i++)
+  {
+    a[i]=parseInt(a[i]);
+    c=a[i]*a[i+1];
+   
+}
+return c;
+}
